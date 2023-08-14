@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Guess the number | JavaScript Game</title>
+</head>
+
+<body class="bg-light">
+  <main class="shadow bg-white p-5 border">
+    <h2 class="text-dark text-center fw-bold">Guess the number</h2>
+    <div class="text-muted text-center">
+      Try and guess a random number between 1 and 100.
+    </div>
+    <form action="#" id="guessForm" class="mt-4">
+      <input type="text" id="guessedNumber" class="form-control shadow-sm">
+      <div class="text-center text-muted small">
+        You have 10 attempts to guess the right number
+      </div>
+      <div class="text-center mt-3" id="submitGuessBtn">
+        <button class="btn btn-primary">
+          Submit Guess
+        </button>
+      </div>
+    </form>
+
+    <div class="text-center fs-5 fw-bold mt-3" id="displayMessag"></div>
+    <div class="mt-3 text-center fw-5 text-muted" id="guessSlot"></div>
+    <h5 class="text-center text-dark d-none mt-3" id="remainingGuess">
+    </h5>
+    <div class="text-center mt-4 d-none" id="startNewGameBtn">
+      <button class="btn btn-success" onclick="newGame()">Start new game</button>
+    </div>
+  </main>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/sweetalert.min.js"></script>
+</body>
+
+</html>
